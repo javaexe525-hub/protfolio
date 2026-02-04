@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أبو يوسف للنجارة والديكور والدهانات | الرياض</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      :root {
+        --primary-gold: #d4af37;
+        --dark-wood: #1a120b;
+        --beige-bg: #f5f5dc;
+        --white: #ffffff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Cairo", sans-serif;
+      }
+      body {
+        background-color: var(--beige-bg);
+        color: var(--dark-wood);
+        line-height: 1.6;
+      }
+
+      /* Header */
+      header {
+        background: var(--dark-wood);
+        padding: 15px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        border-bottom: 3px solid var(--primary-gold);
+      }
+      .logo {
+        color: var(--white);
+        font-weight: 900;
+        font-size: 1.1rem;
+      }
+      .logo span {
+        color: var(--primary-gold);
+      }
+      .btn-call-header {
+        background: var(--primary-gold);
+        color: var(--dark-wood);
+        padding: 8px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      /* Hero Section */
+      .hero {
+        height: 75vh;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("https://images.unsplash.com/photo-1581421300552-3395c979b250?q=80&w=1470");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: var(--white);
+        padding: 20px;
+      }
+      .hero h1 {
+        font-size: clamp(1.8rem, 5vw, 3rem);
+        margin-bottom: 15px;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+      .cta-whatsapp {
+        background: #25d366;
+        color: white;
+        padding: 15px 35px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      }
+
+      /* Features Strip */
+      .features {
+        background: var(--primary-gold);
+        color: var(--dark-wood);
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        font-weight: 700;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      /* Services Section */
+      .services {
+        padding: 60px 5%;
+        text-align: center;
+      }
+      .services h2 {
+        margin-bottom: 40px;
+        font-size: 2rem;
+      }
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+      }
+      .card {
+        background: var(--white);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+        border-bottom: 4px solid var(--primary-gold);
+      }
+      .card i {
+        font-size: 3rem;
+        color: var(--primary-gold);
+        margin-bottom: 20px;
+      }
+
+      /* Map Section - التحديث الصحيح والمؤكد للموقع */
+      .map-section {
+        padding: 50px 5%;
+        background: var(--white);
+        text-align: center;
+      }
+      .map-container {
+        width: 100%;
+        height: 500px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        margin-top: 20px;
+        border: 4px solid var(--beige-bg);
+      }
+      .location-info {
+        margin-top: 15px;
+        font-weight: 700;
+        color: #555;
+      }
+
+      /* Floating WhatsApp Button */
+      .wa-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: #25d366;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 35px;
+        z-index: 1000;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+      }
+
+      footer {
+        background: var(--dark-wood);
+        color: var(--white);
+        text-align: center;
+        padding: 30px;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">أبو يوسف <span>للنجارة والديكور</span></div>
+      <a href="tel:0594723692" class="btn-call-header"
+        ><i class="fas fa-phone-alt"></i> اتصل الآن</a
+      >
+    </header>
+
+    <section class="services">
+      <h2>خدماتنا المميزة</h2>
+      <div class="services-grid">
+        <a href="bedrooms.html" style="text-decoration: none; color: inherit">
+          <div class="card">
+            <i class="fas fa-bed"></i>
+            <h4>تفصيل غرف نوم</h4>
+            <p>اضغط لمشاهدة الصور</p>
+          </div>
+        </a>
+
+        <a href="doors.html" style="text-decoration: none; color: inherit">
+          <div class="card">
+            <i class="fas fa-door-open"></i>
+            <h4>تركيب أبواب</h4>
+            <p>اضغط لمشاهدة الصور</p>
+          </div>
+        </a>
+
+        <a href="paints.html" style="text-decoration: none; color: inherit">
+          <div class="card">
+            <i class="fas fa-paint-brush"></i>
+            <h4>دهانات وديكور</h4>
+            <p>اضغط لمشاهدة الصور</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="map-section" id="location">
+      <h2>موقعنا (منجرة أبو يوسف)</h2>
+      <p class="location-info"></p>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.1625!2d46.7795!3d24.7215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03a2b89f3533%3A0x6ce129b2659dd221!2sHatim%20At%20Tai%2C%20Ar%20Rawdah%2C%20Riyadh%2013213!5e0!3m2!1sen!2ssa!4v1707000000000!5m2!1sen!2ssa"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+      <div style="margin-top: 20px">
+        <a
+          href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.7!2d46.77!3d24.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQyJzAwLjAiTiA0Niw0NidDMDAuMCJF!5e0!3m2!1sar!2ssa!4v17000000000005"
+          target="_blank"
+          style="
+            color: var(--primary-gold);
+            font-weight: bold;
+            text-decoration: none;
+          "
+        >
+          <i class="fas fa-map-marked-alt"></i> افتح الموقع في تطبيق جوجل ماب
+        </a>
+      </div>
+    </section>
+
+    <a href="https://wa.me/966594723692" class="wa-float" target="_blank"
+      ><i class="fab fa-whatsapp"></i
+    ></a>
+
+    <footer>
+      <p>منجرة أبو يوسف للنجارة والديكور - الرياض - حي الروضة</p>
+      <p>تواصل معنا: 0594723692</p>
+    </footer>
+  </body>
+</html>
